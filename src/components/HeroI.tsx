@@ -8,7 +8,7 @@ export default function HeroI() {
    });
    return (
       <section className='flex flex-col items-center w-full mt-24'>
-         <section className='flex flex-row gap-3 items-center sm:w-1/5 mx-auto w-4/5'>
+         <section className='flex flex-row gap-3 items-center sm:w-2/5 mx-auto w-4/5'>
             <p
                id='shop'
                onClick={() => setstate((prev) => ({ ...prev, count: 3, style: 1 }))}

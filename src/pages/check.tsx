@@ -8,11 +8,11 @@ export default function Checkout() {
             <Navbar remove={true} />
          </section>
          <section className='flex flex-col items-center sm:w-[80%] w-[95%]'>
-            <div className='sm:w-1/4 p-3 shadow rounded flex justify-center'>
+            <div className='sm:w-1/4 p-3 shadow rounded flex justify-center bg-green-800 mt-4'>
                <p className='font-sora text-white text-xl text-center'>Check Out</p>
             </div>
-            <div className='flex sm:flex-row flex-col-reverse gap-10 items-center w-full'>
-               <div className='flex flex-col items-start sm:w-[43%] w-[90%] mx-auto sm:mt-[6%] gap-4 self-start'>
+            <div className='flex sm:flex-row flex-col-reverse gap-10 items-center w-full self-stretch'>
+               <div className='flex flex-col items-start sm:w-[43%] w-[90%] mx-auto gap-4 self-start'>
                   <p className='font-sora text-green-800 text-start text-2xl font-semibold'>Customers Details</p>
                   <div className='grid sm:grid-cols-3 grid-cols-2 gap-3 items-start w-full justify-between'>
                      <div className='flex flex-col items-start w-full'>
@@ -68,39 +68,39 @@ export default function Checkout() {
                      </p>
                   </div>
                </div>
-               <div className='rounded shadow p-3 sm:w-1/3 w-full flex flex-col items-center gap-4 bg-[#CCE7D0]'>
+               <div className='rounded shadow p-3 sm:w-1/3 w-full flex flex-col h-full justify-between self-stretch items-center gap-4 bg-[#CCE7D0]'>
                   <div className='flex flex-col sm:flex-row items-center w-full'>
                      <img src={Speak} className='object-cover sm:w-1/5 w-full' alt='img' />
-                     <div className='flex flex-col items-start w-3/4 gap-5'>
-                        <p className='font-sora text-lg text-start'>sP134</p>
-                        <p className='font-sora text-xl text-start'>N1,000,000</p>
+                     <div className='ml-10 flex flex-col items-start w-3/4 gap-5'>
+                        <p className='font-sora text-lg text-start'>SP134</p>
+                        <p className='font-sora text-xl text-start font-semibold'>N1,000,000</p>
                      </div>
                   </div>
                   <div className='flex flex-col sm:flex-row items-center w-full'>
                      <img src={Speak} className='object-cover sm:w-1/5 w-full' alt='img' />
-                     <div className='flex flex-col items-start w-3/4 gap-5'>
-                        <p className='font-sora text-lg text-start'>sP134</p>
-                        <p className='font-sora text-xl text-start'>N1,000,000</p>
+                     <div className='ml-10 flex flex-col items-start w-3/4 gap-5'>
+                        <p className='font-sora text-lg text-start'>SP134</p>
+                        <p className='font-sora text-xl text-start font-semibold'>N1,000,000</p>
                      </div>
                   </div>
                   <div className='flex flex-col gap-2 sm:flex-row items-center w-full'>
                      <img src={Speak} className='object-cover sm:w-1/5 w-full' alt='img' />
-                     <div className='flex flex-col items-start w-3/4 gap-5'>
-                        <p className='font-sora text-lg text-start'>sP134</p>
-                        <p className='font-sora text-xl text-start'>N1,000,000</p>
+                     <div className='ml-10 flex flex-col items-start w-3/4 gap-5'>
+                        <p className='font-sora text-lg text-start'>SP134</p>
+                        <p className='font-sora text-xl text-start font-semibold'>N1,000,000</p>
                      </div>
                   </div>
                </div>
             </div>
          </section>
-         <div className='h-[3px] bg-green-950 sm:w-[90%] w-full text-transparent my-10'>.</div>
-         <section className='flex flex-col items-center sm:w-3/5 mx-auto w-[95%] mt-10'>
-            <div className='flex flex-row items-center w-full sm:justify-between justify-center mb-24'>
-               <p className='font-sora text-lg text-start text-stone-800'>Total</p>
-               <p className='font-sora text-lg text-start'>
-                  N1,000,000 <br />
-                  <span className='font-sora text-xs'>Home delivery charge included</span>
-               </p>
+         <div className='h-[3px] bg-green-950 sm:w-[90%] w-full text-transparent my-10 '>.</div>
+         <section className='flex flex-col items-center sm:w-3/5 mx-auto w-[95%] mt-3 sm:mt-10 h-full justify-between'>
+            <div className='flex flex-row items-center w-full justify-between mb-3 sm:mb-14'>
+               <p className='font-sora text-2xl text-start text-stone-800 self-start justify-start w-full'>Total</p>
+               <div className='flex flex-col items-center w-full justify-end'>
+                  <p className='font-sora text-2xl self-end text-center'>N1,000,000</p>
+                  <p className='font-sora text-xs text-center self-end'>Home delivery charge included</p>
+               </div>
             </div>
             <div className='flex sm:flex-row items-center flex-col w-full gap-3 justify-center sm:justify-between'>
                <button className='bg-[#016134] py-4 px-5 flex flex-row items-center gap-3 justify-center sm:w-[200px] w-full'>
@@ -115,7 +115,7 @@ export default function Checkout() {
                </button>
             </div>
          </section>
-         <Footer />
+         <Footer style='bg-white' />
       </section>
    );
 }

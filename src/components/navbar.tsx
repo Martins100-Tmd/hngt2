@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 export default function Navbar({ remove }: { remove: boolean }) {
    return (
       <header className='relative flex flex-col items-center w-full justify-between bg-[#CCE7D0]'>
-         <nav className='sm:flex hidden absolute top-10 left-[10%] flex-row items-center z-10 w-[80%] justify-between mx-auto rounded-full py-2 px-16 shadow bg-[#004403]'>
-            <img src={Logo} className='object-cover w-[7%]' alt='logo' />
-            <div className='rounded-full shadow border border-white px-3 w-[40%] flex flex-row items-center'>
+         <nav className='sm:flex hidden my-7 flex-row items-center gap-10 z-10 w-[80%] justify-between mx-auto rounded-full py-3 px-16 shadow bg-[#004403]'>
+            <Link to={'/'} className='w-[20%]'>
+               <img src={Logo} className='object-cover w-[90%]' alt='logo' />
+            </Link>
+            <div className='rounded-full shadow border border-white px-3 w-[80%] flex flex-row items-center'>
                <img src={Search} className='object-cover w-[5%] ml-3' alt='search icon' />
                <input
                   type='search'
@@ -19,7 +21,7 @@ export default function Navbar({ remove }: { remove: boolean }) {
                <ul className='flex flex-row items-center gap-10'>
                   <Link to={'/'} className='flex flex-col items-center'>
                      <li className='flex flex-row items-center gap-3 justify-center'>
-                        <img src={Home} className='object-cover w-[11%]' alt='home link' />
+                        <img src={Home} className='object-cover w-[17%]' alt='home link' />
                         <span className='font-sora font-thin text-center text-base text-orange-300 cursor-pointer'>Home</span>
                      </li>
                      <span className=' h-[0.5px] bg-orange-300 mt-1 w-[70px]'></span>
@@ -63,20 +65,20 @@ export default function Navbar({ remove }: { remove: boolean }) {
             } flex-row items-center w-full bg-[#CCE7D0]  z-0 sm:max-h-[400px] max-h-[290px] pb-4 shadow sm:mt-0 -mt-[15%]`}
          >
             <div className='w-full sm:w-3/5 h-[400px] bg-[#CCE7D0] flex justify-center'>
-               <section className='flex flex-col items-start sm:w-3/5 w-[90%] mx-auto gap-4 h-4/5 justify-center self-end'>
-                  <p className='sm:text-5xl text-3xl font-san3 text-start font-semibold w-full mx-0 text-[#004403]'>
+               <section className='flex flex-col items-start sm:w-3/5 w-[94%] mx-auto gap-4 h-4/5 justify-center self-end'>
+                  <p className='text-5xl font-san3 text-center sm:text-start font-bold w-full mx-0 text-[#004403]'>
                      Shop from the best instrument plug
                   </p>
-                  <p className='font-san3 font-medium text-sm text-start w-4/5 text-black text-opacity-75 mt-2'>
+                  <p className='font-san3 font-medium sm:text-base text-lg text-center sm:text-start w-full sm:w-4/5 text-black text-opacity-75 mt-2'>
                      It all starts with a click and you are one step ahead to finding your dream <br />
                      speaker with quality
                   </p>
-                  <div className='flex flex-row items-stretch w-3/4 justify-between sm:mt-7 my-5'>
-                     <button className='rounded-xl py-3 sm:py-3 sm:px-14 px-7 font-san3 text-base text-white bg-[#004403]'>
+                  <div className='flex flex-row items-stretch w-[97%] sm:mx-0 mx-auto sm:w-3/4 justify-between sm:mt-7 my-5 gap-5'>
+                     <button className='rounded-xl p-3 w-full font-san3 text-base text-white bg-[#004403]'>
                         <Link to={'/auth'}>Sign In</Link>
                      </button>
-                     <button className='rounded-xl py-3 sm:py-3 sm:px-14 px-7 font-san3 text-base border-black border'>
-                        <Link to={'/contact'}>Sign Up</Link>
+                     <button className='rounded-xl p-3 w-full font-san3 text-base border-black border'>
+                        <Link to={'/auth'}>Sign Up</Link>
                      </button>
                   </div>
                </section>
@@ -96,9 +98,9 @@ export function SmNav() {
          <div className='w-[45%]'>
             <img src={Logo} className='object-cover w-[65%]' alt='logo' />
          </div>
-         <div className='flex flex-row items-center gap-10 w-[55%] justify-end'>
-            <Link to={'/aproduct'}>
-               <img src={LinK} className='object-cover w-[10%]' alt='home link' />
+         <div className='flex flex-row items-center gap-10 sm:w-[55%] w-1/5 justify-end'>
+            <Link to={'/aproduct'} className='self-center'>
+               <img src={LinK} className='object-cover w-[50%]' alt='home link' />
             </Link>
             <i onClick={() => setstate((prev) => ({ ...prev, sb: 1 }))} className='material-icons text-2xl text-white'>
                menu

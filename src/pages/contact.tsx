@@ -6,14 +6,14 @@ export default function Contact() {
          <section className='w-full relative'>
             <Navbar remove={true} />
          </section>
-         <section className='sm:w-4/5 mx-auto w-[95%] flex sm:flex-row flex-col items-center gap-5'>
-            <div className='sm:w-1/2 w-full flex justify-center h-[300px] self-center'>
+         <section className='sm:w-4/5 mx-auto w-[95%] flex sm:flex-row flex-col items-center gap-5 mt-10'>
+            <div className='sm:w-1/2 w-full flex justify-center h-[300px] self-start'>
                <img src={awof} className='w-full object-cover' alt='img' />
             </div>
             <button className='sm:hidden flex text-center justify-center rounded-xl py-3 sm:py-3 sm:px-14 px-7 font-san3 text-base bg-[#15613f] text-white w-1/2 mt-10'>
                <Link to={'/auth'}>Sign Up</Link>
             </button>
-            <div className='flex flex-col items-start sm:w-[43%] w-[90%] mx-auto sm:mt-[15%] gap-4 self-end'>
+            <div className='flex flex-col items-start sm:w-[43%] w-[90%] mx-auto gap-4 self-end'>
                <p className='font-sora text-green-800 text-start text-2xl font-semibold'>Customers Details</p>
                <div className='grid sm:grid-cols-3 grid-cols-2 gap-3 items-start w-full justify-between'>
                   <div className='flex flex-col items-start w-full'>
@@ -119,7 +119,7 @@ export default function Contact() {
                </div>
             </div>
          </section>
-         <Footer />
+         <Footer style='' />
       </section>
    );
 }

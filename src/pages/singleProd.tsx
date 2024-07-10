@@ -1,4 +1,5 @@
 import { Footer, Navbar, Speak, Star, cart, left, purchase, rating, right } from '..';
+import { Link } from 'react-router-dom';
 export default function AProduct() {
    return (
       <section className='flex h-screen flex-col justify-between'>
@@ -40,13 +41,15 @@ export default function AProduct() {
                </div>
                <div className='flex flex-col items-start w-full gap-3'>
                   <button className='bg-orange-400 py-2 px-5 flex flex-row items-center justify-center w-full'>
-                     <img src={cart} className='w-[4%] object-cover' alt='cart' />
+                     <img src={cart} className='w-[7%] mr-4 object-cover' alt='cart' />
                      <span className='font-sora text-white text-center text-sm'>Add to cart</span>
                   </button>
-                  <button className='bg-[#016134] py-2 px-5 flex flex-row items-center justify-center w-full'>
-                     <img src={purchase} className='w-[4%] object-cover' alt='cart' />
-                     <span className='font-sora text-white text-center text-sm'>Purchase</span>
-                  </button>
+                  <Link to={'/check'} className='w-full'>
+                     <button className='bg-[#016134] py-2 px-5 flex flex-row items-center justify-center w-full'>
+                        <img src={purchase} className='w-[7%] mr-4 object-cover' alt='cart' />
+                        <span className='font-sora text-white text-center text-sm'>Purchase</span>
+                     </button>
+                  </Link>
                </div>
                <button className='bg-orange-400 p-3 rounded shadow self-start font-sora text-white text-sm'>More Info</button>
                <div className='flex justify-start w-full'>
@@ -105,7 +108,7 @@ export default function AProduct() {
             </section>
          </section>
 
-         <Footer />
+         <Footer style='' />
       </section>
    );
 }

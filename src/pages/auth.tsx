@@ -1,4 +1,5 @@
 import { Footer, Navbar, Speaker, em, email, google } from '..';
+import { Link } from 'react-router-dom';
 export default function AuthPage() {
    return (
       <section className='flex h-screen flex-col justify-between'>
@@ -50,18 +51,24 @@ export default function AuthPage() {
                      <button className='bg-[#277c53] rounded-xl py-3 px-5 flex flex-row items-center justify-center w-full'>
                         <span className='font-sora text-white text-center text-sm'>Sign in</span>
                      </button>
-                     <button className='border border-[#465B52] rounded-xl py-3 px-5 flex flex-row items-center justify-center w-full'>
+                     <button
+                        onClick={() => (window.location.href = 'https://google.com/account')}
+                        className='border border-[#465B52] rounded-xl py-3 px-5 flex flex-row items-center justify-center w-full'
+                     >
                         <img src={google} className='w-[4%] object-cover mr-3' alt='cart' />
                         <span className='font-sora text-center text-sm'>Sign in with Google</span>
                      </button>
                   </div>
                   <p className='font-sora text-sm font-medium text-center w-full sm:mt-10 mt-5'>
-                     Dont have account? <span className='font-semibold'>Sign Up</span>
+                     Dont have account?{' '}
+                     <span className='font-semibold'>
+                        <Link to={'/auth'}>Sign Up</Link>
+                     </span>
                   </p>
                </div>
             </div>
          </section>
-         <Footer />
+         <Footer style='bg-white' />
       </section>
    );
 }

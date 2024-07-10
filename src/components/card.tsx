@@ -8,7 +8,7 @@ export default function Card() {
          <p className='font-sora text-sm text-center w-full font-semibold'>Sp135</p>
          <p className='font-sora text-sm text-center w-full font-semibold'>N1,000,000</p>
          <p className='font-sora text-sm text-center w-full font-semibold'>15 Inch / 4800watt / Pure Acostic / 100 coil /Double magnet</p>
-         <div className='flex flex-row items-center gap-2 sm:w-2/5 w-[55%] mx-auto justify-between'>
+         <div className='flex flex-row items-center gap-1 sm:w-2/5 w-[55%] mx-auto justify-between'>
             <img src={Star} className='object-cover w-[8%]' alt='star_img' />
             <img src={Star} className='object-cover w-[8%]' alt='star_img' />
             <img src={Star} className='object-cover w-[8%]' alt='star_img' />
