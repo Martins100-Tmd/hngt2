@@ -8,7 +8,7 @@ export default function Layout() {
          </section>
          <Hero />
          <Hero1 />
-         <Footer />
+         <Footer style='' />
       </main>
    );
 }

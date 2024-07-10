@@ -8,8 +8,8 @@ export default function Checkout() {
             <Navbar remove={true} />
          </section>
          <section className='flex flex-col items-center sm:w-[80%] w-[95%]'>
-            <div className='sm:w-1/4 p-3 shadow rounded flex justify-center bg-green-800 mt-4'>
-               <p className='font-sora text-white text-xl text-center'>Check Out</p>
+            <div className='sm:w-1/4 p-3 shadow rounded flex justify-center bg-green-800 my-4'>
+               <p className='font-sora text-white text-sm sm:text-xl text-center'>Check Out</p>
             </div>
             <div className='flex sm:flex-row flex-col-reverse gap-10 items-center w-full self-stretch'>
                <div className='flex flex-col items-start sm:w-[43%] w-[90%] mx-auto gap-4 self-start'>
@@ -60,32 +60,32 @@ export default function Checkout() {
                         Preferred Location
                      </label>
                   </div>
-                  <div className='flex flex-row items-center gap-4'>
-                     <i className='material-icons text-xl'>check_box_outline_blank</i>
-                     <p className='text-sm font-semibold text-start'>
+                  <div className='flex flex-row items-center gap-2.5'>
+                     <i className='material-icons text-xl self-start'>check_box_outline_blank</i>
+                     <p className='text-xs font-medium text-start self-start'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua. Ut enim a
                      </p>
                   </div>
                </div>
                <div className='rounded shadow p-3 sm:w-1/3 w-full flex flex-col h-full justify-between self-stretch items-center gap-4 bg-[#CCE7D0]'>
-                  <div className='flex flex-col sm:flex-row items-center w-full'>
+                  <div className='flex flex-col sm:flex-row items-center w-full shadow-xl p-3'>
                      <img src={Speak} className='object-cover sm:w-1/5 w-full' alt='img' />
-                     <div className='ml-10 flex flex-col items-start w-3/4 gap-5'>
+                     <div className='sm:ml-10 flex flex-col items-start w-full sm:w-3/4 gap-2 sm:gap-5'>
                         <p className='font-sora text-lg text-start'>SP134</p>
                         <p className='font-sora text-xl text-start font-semibold'>N1,000,000</p>
                      </div>
                   </div>
-                  <div className='flex flex-col sm:flex-row items-center w-full'>
+                  <div className='flex flex-col sm:flex-row items-center w-full shadow-xl p-3'>
                      <img src={Speak} className='object-cover sm:w-1/5 w-full' alt='img' />
-                     <div className='ml-10 flex flex-col items-start w-3/4 gap-5'>
+                     <div className='sm:ml-10 flex flex-col items-start w-full sm:w-3/4 gap-2 sm:gap-5'>
                         <p className='font-sora text-lg text-start'>SP134</p>
                         <p className='font-sora text-xl text-start font-semibold'>N1,000,000</p>
                      </div>
                   </div>
-                  <div className='flex flex-col gap-2 sm:flex-row items-center w-full'>
+                  <div className='flex flex-col gap-2 sm:flex-row items-center w-full shadow-xl p-3'>
                      <img src={Speak} className='object-cover sm:w-1/5 w-full' alt='img' />
-                     <div className='ml-10 flex flex-col items-start w-3/4 gap-5'>
+                     <div className='sm:ml-10 flex flex-col items-start w-full sm:w-3/4 gap-2 sm:gap-5'>
                         <p className='font-sora text-lg text-start'>SP134</p>
                         <p className='font-sora text-xl text-start font-semibold'>N1,000,000</p>
                      </div>
@@ -103,12 +103,12 @@ export default function Checkout() {
                </div>
             </div>
             <div className='flex sm:flex-row items-center flex-col w-full gap-3 justify-center sm:justify-between'>
-               <button className='bg-[#016134] py-4 px-5 flex flex-row items-center gap-3 justify-center sm:w-[200px] w-full'>
-                  <img src={purchase} className='w-[11%] object-cover' alt='cart' />
+               <button className='bg-[#016134] py-3 px-5 flex flex-row items-center rounded gap-3 justify-center sm:w-[200px] w-full'>
+                  <img src={purchase} className='w-[9%] object-cover' alt='cart' />
                   <span className='font-sora text-white text-center text-sm'>Purchase</span>
                </button>
-               <button className='bg-[#dd7a29] py-4 px-5 flex flex-row items-center gap-3 justify-center sm:w-[200px] w-full'>
-                  <img src={cart} className='w-[11%] object-cover' alt='cart' />
+               <button className='bg-[#dd7a29] py-3 px-5 flex flex-row items-center rounded gap-3 justify-center sm:w-[200px] w-full'>
+                  <img src={cart} className='w-[9%] object-cover' alt='cart' />
                   <span className='font-sora text-white text-center text-sm'>
                      <Link to={'/aproduct'}>Back to cart</Link>
                   </span>

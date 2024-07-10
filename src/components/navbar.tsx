@@ -48,7 +48,7 @@ export default function Navbar({ remove }: { remove: boolean }) {
             <SmNav />
          </div>
          <div
-            className={`rounded-full shadow border border-[#016134] px-3 w-[90%] z-40 mt-10 mb-7 sm:hidden ${
+            className={`rounded-full shadow border border-[#016134] px-3 w-[90%] z-40 mt-4 mb-16 sm:hidden ${
                remove ? 'hidden' : 'flex'
             } flex-row items-center`}
          >
@@ -66,19 +66,19 @@ export default function Navbar({ remove }: { remove: boolean }) {
          >
             <div className='w-full sm:w-3/5 h-[400px] bg-[#CCE7D0] flex justify-center'>
                <section className='flex flex-col items-start sm:w-3/5 w-[94%] mx-auto gap-4 h-4/5 justify-center self-end'>
-                  <p className='text-5xl font-san3 text-center sm:text-start font-bold w-full mx-0 text-[#004403]'>
+                  <p className='text-3xl sm:text-5xl font-san3 text-center sm:text-start font-bold w-full mx-0 text-[#004403]'>
                      Shop from the best instrument plug
                   </p>
-                  <p className='font-san3 font-medium sm:text-base text-lg text-center sm:text-start w-full sm:w-4/5 text-black text-opacity-75 mt-2'>
+                  <p className='font-san3 font-normal text-base sm:text-lg text-center sm:text-start w-full sm:w-4/5 text-black text-opacity-75 mt-2'>
                      It all starts with a click and you are one step ahead to finding your dream <br />
                      speaker with quality
                   </p>
-                  <div className='flex flex-row items-stretch w-[97%] sm:mx-0 mx-auto sm:w-3/4 justify-between sm:mt-7 my-5 gap-5'>
+                  <div className='flex flex-row items-stretch w-[97%] sm:mx-0 mx-auto sm:w-3/4 justify-between my-5 mb-16 gap-5'>
                      <button className='rounded-xl p-3 w-full font-san3 text-base text-white bg-[#004403]'>
                         <Link to={'/auth'}>Sign In</Link>
                      </button>
                      <button className='rounded-xl p-3 w-full font-san3 text-base border-black border'>
-                        <Link to={'/auth'}>Sign Up</Link>
+                        <Link to={'/contact'}>Sign Up</Link>
                      </button>
                   </div>
                </section>
