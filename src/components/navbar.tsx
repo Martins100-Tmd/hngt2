@@ -109,13 +109,13 @@ export function SmNav() {
          <div
             className={`bg-[#016134] p-3 ${
                state.sb ? 'flex' : 'hidden'
-            } w-[55%] flex-col items-center absolute right-0 top-0 h-[300px] justify-center`}
+            } w-[55%] flex-col items-center absolute right-0 top-0 h-auto justify-center`}
          >
-            <div className='flex flex-row items-center gap-10 w-4/5 justify-center -mt-[15%] mb-10'>
+            <div className='flex flex-row items-center gap-10 w-4/5 justify-center pt-5 mb-10'>
                <Link to={'/aproduct'}>
-                  <img src={LinK} className='object-cover w-[13%]' alt='home link' />
+                  <img src={LinK} className='object-cover w-[28%]' alt='home link' />
                </Link>
-               <i onClick={() => setstate((prev) => ({ ...prev, sb: 0 }))} className='material-icons text-4xl text-white'>
+               <i onClick={() => setstate((prev) => ({ ...prev, sb: 0 }))} className='material-icons text-3xl text-white'>
                   menu
                </i>
             </div>
