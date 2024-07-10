@@ -11,7 +11,7 @@ export { default as HPerson } from '/person.png';
 export { default as Search } from '/search.png';
 export { default as water } from '/water.png';
 export { default as Home } from '/Home.png';
-export { default as Link } from '/Link.png';
+export { default as LinK } from '/Link.png';
 export { default as Star } from '/star.png';
 export { default as Speak } from '/speak.png';
 export { default as Logo } from '/logo.png';
@@ -19,6 +19,16 @@ export { default as IG } from '/IG.png';
 export { default as YT } from '/YT.png';
 export { default as X } from '/X.png';
 export { default as searchg } from '/searchg.png';
+export { default as left } from '/left.png';
+export { default as right } from '/right.png';
+export { default as awof } from '/awof.png';
+
+export { default as rating } from '/rating.png';
+export { default as purchase } from '/purchase.png';
+export { default as cart } from '/cart.png';
+export { default as email } from '/email.png';
+export { default as em } from '/em.png';
+export { default as google } from '/google.png';
 
 export { default as Footer } from './components/footer';
 
@@ -34,3 +44,11 @@ export { default as V9 } from '/Vector (8).png';
 export { default as V10 } from '/Vector (9).png';
 export { default as V11 } from '/Vector (10).png';
 export { default as V12 } from '/Vector (11).png';
+
+export function locator() {
+   let path = window.location.pathname;
+   console.log(path);
+   console.log('Martins');
+}
+
+locator();

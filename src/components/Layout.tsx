@@ -4,7 +4,7 @@ export default function Layout() {
    return (
       <main className='flex flex-col items-center w-full'>
          <section className='w-full relative'>
-            <Navbar />
+            <Navbar remove={false} />
          </section>
          <Hero />
          <Hero1 />
